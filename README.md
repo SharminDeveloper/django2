@@ -1,0 +1,1 @@
+It's not a complete Django project and It's basically focused on the structure of the database. 
