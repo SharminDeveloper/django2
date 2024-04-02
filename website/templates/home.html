@@ -1,0 +1,15 @@
+{% block title %}
+<title>home</title>
+{% endblock title %}
+{% block blockname %}
+<h1>It's the home page</h1>
+{% if user.username == 'admin' %}
+<a href="{% url 'admin:index' %}">admin pannel</a>
+{% endif %}
+<br>
+{% if user.is_authenticated %}
+<a href="{% url 'logout' %}">Logout</a>
+{% else %}
+<a href="{% url 'login' %}">Login</a>
+{% endif %}
+{% endblock blockname %}
